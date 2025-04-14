@@ -1,0 +1,11 @@
+Código,Nome,Categoria,Quantidade em Estoque,Preço Unitário (R$),Fornecedor,Data de Entrada
+P001,Notebook Dell Inspiron 15,Notebook,12,3599.9,Dell Brasil,2025-03-05
+P002,Mouse Logitech M170,Periféricos,85,79.9,Logitech,2025-02-20
+P003,Teclado Mecânico Redragon Kumara,Periféricos,40,199.99,Redragon,2025-02-25
+P004,Monitor LG 24MK430H,Monitores,25,899.0,LG Eletrônicos,2025-03-10
+P005,SSD Kingston 480GB,Armazenamento,60,269.5,Kingston,2025-03-15
+P006,HD Seagate 1TB,Armazenamento,35,299.9,Seagate,2025-03-17
+P007,Placa-mãe ASUS B450M,Componentes,18,649.9,ASUS,2025-02-28
+P008,Processador AMD Ryzen 5 5600G,Componentes,22,1099.99,AMD,2025-03-01
+P009,Memória RAM Corsair 8GB DDR4,Componentes,50,239.9,Corsair,2025-03-03
+P010,Cabo HDMI 2.0 2m,Acessórios,120,29.9,Multilaser,2025-03-12
