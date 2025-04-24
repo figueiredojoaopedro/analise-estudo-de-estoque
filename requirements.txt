@@ -1,3 +1,4 @@
 pandas
-pyarrow
-kagglehub[pandas-datasets]
+matplotlib
+scikit-learn
+numpy
