@@ -69,12 +69,16 @@ def main():
 def chart_risco_ruptura(ax, dados):
     ax.set_title("Risco de Ruptura por Local", fontweight='bold')
     media_risco = dados.groupby('Nome', sort=False)['risco_ruptura'].mean()
+    print("Média de risco por local:")
+    print(media_risco)
     bars = ax.bar(media_risco.index.tolist(), media_risco.values, color='orange')
     ax.set_ylabel("Proporção de Risco")
-    ax.set_xticks([])
+    ax.set_xticks(range(len(media_risco)))
+    ax.set_xticklabels(media_risco.index, rotation=90, fontsize=7)
     ax.grid(axis='y', linestyle='--', alpha=0.6)
-    for bar, label in zip(bars, media_risco.index):
-        ax.text(bar.get_x() + bar.get_width()/2, 0.02, label, ha='center', va='bottom', fontsize=7, rotation=90)
+    for bar, value in zip(bars, media_risco.values):
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01, 
+                f'{value:.2f}', ha='center', va='bottom', fontsize=7)
 
 def chart_top5(ax, top5):
     ax.set_title("Top 5 Produtos com Maior Score de Reposição", fontweight='bold')
